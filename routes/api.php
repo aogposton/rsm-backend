@@ -17,7 +17,3 @@ use App\Models\Brewery;
 Route::get('/', function () {
   return Brewery::get();
 });
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
